@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing </title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+</head>
+<body>
+<style>
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:#65c5eb;
+}
+
+
+
+.bg-light{
+    background-color: #f2e9e4!important;
+}
+
+.navbar-brand{
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 1.5rem;
+    color: #5f6368!important;
+}
+
+.nav-link{
+    color: #5f6368!important;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.nav-link:hover{
+    background-color: #f3f1f1;
+}
+/* navbar css ends here  */
+
+/* here content css starts here  */
+.hero-content{
+   
+    color: #ffffff;
+    padding: 3rem;
+    border-bottom-left-radius: 45rem;
+    border-bottom-right-radius: 45rem;
+    margin-bottom: 1vh;
+}
+
+.hero-img{
+    height: 70vh;
+    width: 100%;
+}
+
+@media only screen and (max-width: 766px) {
+    .hero-img {
+      display: none;
+    }
+}
+
+.get-started{
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 162%;
+    background-color: #fff;
+    color: #039be5!important;
+    transition: 0.3s;
+}
+
+.get-started:hover{
+    text-decoration: none;
+    background-color: #bfdff0;
+    
+}
+/* here content css starts here  */
+
+
+.get-started-content .row{
+    padding: 25vh 0;
+}
+
+
+
+.get-started-content a:hover{
+    background-color: #017ab6;
+    text-decoration: none;
+}
+/* get-started-buttons css end here*/
+
+/* footer css starts here */
+footer{
+    background-color:  #f2e9e4;
+}
+
+.social-icons li{
+    list-style: none;
+    display: inline;
+    padding: 0.5rem;
+}
+
+.github{
+    color: #24292e;
+}
+
+.linkedin{
+    color: #0077b5;
+}
+
+.google{
+    color: #D44638;
+}
+
+</body>
+</style>
+<body onload="loader()">
+
+  
+
+    <!-- navbar starts here  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./customers.html">History</a>
+            </li>
+			 <li class="nav-item">
+              <a class="nav-link" href="./future.html">Future Mails</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <!-- navbar ends here  -->
+
+    <!-- here content starts here -->
+    <div class="container-fluid hero-content">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-up">
+          <h1><b><i>Get Updated </b> </i></h1>
+          <p class="lead muted">Stay Connected</p>
+         
+          <br>
+          <br>
+          <a class="get-started" href="./subscribe.html">Subscribe Now!</a>
+		  <a class="get-started" href="./userlogin.html">Login</a>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
+          <div class="hero-img-div">
+            <img class="hero-img" src="assets/media/hero-img.svg" alt="img-showing-money-transfer">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- here content ends here -->
+
+
+
+
+    <!-- footer starts here -->
+     
+    <!-- footer ends here -->
+
+    <!-- spalsh screen js -->
+    <script>
+      var preloader = document.getElementById("loading");
+      function loader(){
+        preloader.style.display = 'none';
+      }
+    </script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+    
+</body>
+</html>
